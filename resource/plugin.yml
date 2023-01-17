@@ -1,0 +1,95 @@
+name: GameCore
+main: com.kokicraft.GameCore.Main
+version: 2.2.2
+api-version: 1.19
+description: GameCore.
+author: Koke_Cacao
+commands:
+  GameCore:
+    description: main command
+    aliases: [core]
+    permission: core.command
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /core [reload]
+  reload:
+    description: main command
+    aliases: [rl, reloadserver]
+    permission: core.command.reload
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /reload [seconds]
+  stop:
+    description: main command
+    aliases: [stopserver]
+    permission: core.command.stop
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /stop [seconds]
+  tp:
+    description: Tp to a player or a player to another player
+    permission: core.command.tp
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /tp <playerName> [playerName]
+  tphere:
+    description: Tp a player to yourself
+    permission: core.command.tphere
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /tphere <playerName>
+  tpa:
+    description: Request to tp to a player
+    permission: core.command.tpa
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /tpa <playerName>
+  tpahere:
+    description: Request to tp a player to yourself
+    permission: core.command.tpahere
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /tpahere <playerName>
+  tpaccept:
+    description: Accept a tp request
+    permission: core.command.tpaccept
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /tpaccept
+  tpdeny:
+    description: Deny a tp request
+    permission: core.command.tpdeny
+    permission-message: Unknown command, Type "/help" for help.
+    usage: /tpdeny
+permissions:
+  core.command.*:
+    description: Gives access to all PowerTeleport commands
+    default: op
+    children:
+      core.command.core: true
+      core.command.tp: true
+      core.command.tphere: true
+      core.command.tpa: true
+      core.command.tpahere: true
+      core.command.tpaccept: true
+      core.command.tpdeny: true
+      core.command.tploc: true
+  core.command.core:
+    description: Gives access to the /core
+    default: op
+  core.command.tp:
+    description: Gives access to the /tp command
+    default: op
+  core.command.tphere:
+    description: Gives access to the /tphere command
+    default: op
+  core.command.tpa:
+    description: Gives access to the /tpa command
+    default: op
+  core.command.tpahere:
+    description: Gives access to the /tpahere command
+    default: op
+  core.command.tpaccept:
+    description: Gives access to the /tpaccept command
+    default: op
+  core.command.tpdeny:
+    description: Gives access to the /tpdeny command
+    default: op
+  core.command.reload:
+    description: Gives access to the /reload command
+    default: op
+  core.command.stop:
+    description: Gives access to the /stop command
+    default: op

@@ -1,0 +1,224 @@
+Server:
+  StopDelay: 30
+  ReloadDelay: 30
+  DeletePlayerData:
+   - "world"
+world:
+  Item:
+    Drop:
+      Whitelist: true
+      List:
+       - 'AIR'
+    Pick:
+      Whitelist: true
+      CursorCheck: true
+      List:
+       - 'AIR'
+  Spawn:
+    NoSpawnReason:
+##    - 'CUSTOM'
+    - 'SPAWNER_EGG'
+    - 'SLIME_SPLIT'
+    - 'SPAWNER'
+    - 'EGG'
+    - 'BREEDING'
+    - 'BUILD_IRONGOLEM'
+    - 'BUILD_SNOWMAN'
+    - 'BUILD_WITHER'
+##    - 'CHUNK_GEN'
+    - 'CURED'
+##    - 'DEFAULT'
+    - 'DISPENSE_EGG'
+    - 'INFECTION'
+    - 'JOCKEY'
+    - 'LIGHTNING'
+    - 'MOUNT'
+    - 'NATURAL'
+    - 'NETHER_PORTAL'
+    - 'OCELOT_BABY'
+    - 'REINFORCEMENTS'
+    - 'SILVERFISH_BLOCK'
+    - 'VILLAGE_DEFENSE'
+    - 'VILLAGE_INVASION'
+  Enchant:
+    Disable: true
+    NoPrep: true
+  BlockProtect:
+    NoWaterBukkit: true
+    NoLavaBukkit: true
+    NoInteract:
+     - 'CAKE_BLOCK'
+    ##stone button
+     - 'STONE_BUTTON'
+    ##wood button
+     - 'WOOD_BUTTON'
+    ##wood gate
+     - 'ACACIA_FENCE_GATE'
+     - 'BIRCH_FENCE_GATE'
+     - 'DARK_OAK_FENCE_GATE'
+     - 'FENCE_GATE'
+     - 'JUNGLE_FENCE_GATE'
+     - 'SPRUCE_FENCE_GATE'
+    ##wood trapdoor
+     - 'TRAP_DOOR'
+    ##wood repeater
+     - 'DIODE_BLOCK_OFF'
+     - 'DIODE_BLOCK_ON'
+    ##wood compareator
+     - 'REDSTONE_COMPARATOR_OFF'
+     - 'REDSTONE_COMPARATOR_ON'
+    ##jukebox
+     - 'JUKEBOX'
+    ##enderportal
+     - 'ENDER_PORTAL_FRAME'
+    ##dailight sensor
+     - 'DAYLIGHT_DETECTOR'
+     - 'DAYLIGHT_DETECTOR_INVERTED'
+    ##iron trapdoor
+     - 'IRON_TRAPDOOR'
+    ##wood door
+     - 'ACACIA_DOOR'
+     - 'BIRCH_DOOR'
+     - 'DARK_OAK_DOOR'
+     - 'JUNGLE_DOOR'
+     - 'SPRUCE_DOOR'
+     - 'WOOD_DOOR'
+    ##rail
+     - 'RAILS'
+     - 'ACTIVATOR_RAIL'
+     - 'DETECTOR_RAIL'
+     - 'POWERED_RAIL'
+    ##pot
+     - 'FLOWER_POT'
+     - 'POTTED_POPPY'
+     - 'POTTED_ACACIA_SAPLING'
+     - 'POTTED_ALLIUM'
+     - 'POTTED_AZALEA_BUSH'
+     - 'POTTED_AZURE_BLUET'
+     - 'POTTED_BAMBOO'
+     - 'POTTED_BIRCH_SAPLING'
+     - 'POTTED_BLUE_ORCHID'
+     - 'POTTED_BROWN_MUSHROOM'
+     - 'POTTED_CACTUS'
+     - 'POTTED_CORNFLOWER'
+     - 'POTTED_CRIMSON_FUNGUS'
+     - 'POTTED_CRIMSON_ROOTS'
+     - 'POTTED_DANDELION'
+     - 'POTTED_DARK_OAK_SAPLING'
+     - 'POTTED_DEAD_BUSH'
+     - 'POTTED_FERN'
+     - 'POTTED_FLOWERING_AZALEA_BUSH'
+     - 'POTTED_JUNGLE_SAPLING'
+     - 'POTTED_LILY_OF_THE_VALLEY'
+     - 'POTTED_MANGROVE_PROPAGULE'
+     - 'POTTED_OAK_SAPLING'
+     - 'POTTED_ORANGE_TULIP'
+     - 'POTTED_OXEYE_DAISY'
+     - 'POTTED_PINK_TULIP'
+     - 'POTTED_POPPY'
+     - 'POTTED_RED_MUSHROOM'
+     - 'POTTED_RED_TULIP'
+     - 'POTTED_SPRUCE_SAPLING'
+     - 'POTTED_WARPED_FUNGUS'
+     - 'POTTED_WARPED_ROOTS'
+     - 'POTTED_WHITE_TULIP'
+     - 'POTTED_WITHER_ROSE'
+    ##cauldron
+     - 'CAULDRON'
+    NoLeavesDecay: true
+    NoNotePlay: true
+    NoBlockIgnite: true
+    NoBlockGrow: true
+    NoBlockMelt: true
+    NoBlockExp: true
+    NoBlockBreakByFire: true
+    NoDispense: true
+    NoPlayerSetFire: true
+    NoPlace: true
+    NoBreak: true
+    NoDragonEggTeleport: true
+    NoCakeEat: true
+    NoAddFlowerInPot: true
+    NoDoorBreak: true
+  PlayerProtect:
+    ColorSign: false
+    NoEditBook: true
+    NoFish: true
+    NoShearEntity: true
+    NoStatistic: true
+  EntityProtect:
+    NoEntityExplode: true
+    NoExplodeFire: true
+    NoEndermanChangeBlock: true
+    NoWitherChangeBlock: true
+    NoBoatChangeBlock: true
+    NoFallingBlockChangeBlock: true
+    NoEnderDragonChangeBlock: true
+    PlayerNoPortalTeleport: true
+    EntityNoPortalTeleport: true
+    PlayerNoFood: false
+    EntityVoidSpawn: true
+    PlayerVoidSpawn: false
+    NoMobDamage: false
+    NoSheepDyeWool: true
+    NoSheepRegrowWool: true
+    DamagePass: false
+    NoPlayerDamage: true
+    NoBlockLikeEntityBreak: true
+  Open:
+    chiseledbookshelf: false
+    composter: false
+    smithing: false
+    barrel: false
+    blastfurnace: false
+    cartography: false
+    grindstone: false
+    lectern: false
+    loom: false
+    shulkerbox: false
+    smoker: false
+    stonecutter: false
+    anvil: false
+    beacon: false
+    brewing: false
+    chest: false
+    crafting: false
+    dispenser: false
+    dropper: false
+    enchanting: true
+    enderchest: true
+    hopper: false
+    furnace: false
+    workbench: false
+    villager: false
+  Inventory:
+    NoClick: false
+    NoCraft: true
+    Furnace:
+      NoBurn: true
+      NoExp: true
+      NoBrew: true
+    NoCreative: true
+    NoHopper: true
+  Vehicle:
+    NoNatureBoatDistroy: true
+    NoMobBoatDistroy: true
+    NoPlayerBoatDistroy: true
+    NoNatureMinecartDistroy: true
+    NoMobMinecartDistroy: true
+    NoPlayerMinecartDistroy: true
+  Weather:
+    NoRain: true
+    NoTunder: true
+  World:
+    NoTreeGrow: true
+    NoPortalCreate: true
+
+JoinTeleport:
+  Enable: true
+  World: world
+  X: 0.5
+  Y: 74.5
+  Z: 0.5
+  Pitch: 0
+  Yaw: 0
