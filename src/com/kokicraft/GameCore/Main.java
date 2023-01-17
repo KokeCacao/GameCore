@@ -141,11 +141,11 @@ public class Main extends JavaPlugin {
 
 	// ChunkEvent
 	// ChunkLoadEvent
-	// ChunkPopulateEvent 区块填充完毕
+	// ChunkPopulateEvent
 	// ChunkUnloadEvent
 	// SpawnChangeEvent
 	// WorldEvent
-	// WorldInitEvent 初始化时间
+	// WorldInitEvent
 	// WorldLoadEvent
 	// WorldSaveEvent
 	// WorldUnloadEvent
